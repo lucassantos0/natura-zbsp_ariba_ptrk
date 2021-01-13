@@ -7,14 +7,14 @@ sap.ui.controller("zbsp_ariba_ptrk.home", {
 */
 
   _oConfig : {
-    "mainUrl" : "http://aslx62br.natura.com.br:8005/sap/bc/zariba/main/?sap-client=210",
+    "mainUrl" : "https://aslx62br.natura.com.br:4300/sap/bc/zariba/main/?sap-client=210",
     "mainCalculatedUrl" : "",
     "filter" : "",
     "errorOnly" : true
   },
 
   _oSupplierDashboardConfig: {
-    "url" : "http://aslx62br.natura.com.br:8005/sap/bc/zariba/suppliers_dash?sap-client=210"
+    "url" : "https://aslx62br.natura.com.br:4300/sap/bc/zariba/suppliers_dash?sap-client=210"
   },
 
   onInit: function() {
