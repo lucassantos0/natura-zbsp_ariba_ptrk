@@ -1,0 +1,168 @@
+<core:View
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.uxap"
+	xmlns:m="sap.m"
+	xmlns:f="sap.ui.layout.form"
+	controllerName="zbsp_ariba_ptrk.home"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<ObjectPageLayout
+		id="ObjectPageLayout"
+		upperCaseAnchorBar="false">
+		<headerTitle>
+			<ObjectPageDynamicHeaderTitle>
+				<heading>
+					<m:Title
+						text="Monitor integrações SAP Ariba"
+						wrapping="true" />
+				</heading>
+				<snappedTitleOnMobile>
+					<m:Title text="Monitor integrações SAP Ariba" />
+				</snappedTitleOnMobile>
+			</ObjectPageDynamicHeaderTitle>
+		</headerTitle>
+		<headerContent>
+			<m:HBox>
+				<f:SimpleForm editable="true">
+					<f:content>
+						<m:Label text="URL" />
+						<m:Text
+							text="{Config>/mainCalculatedUrl}"
+							wrapping="true" />
+						<m:Label text="Filtro" />
+						<m:SearchField
+							value="{Config>/filter}"
+							search="onSearchString"
+							width="18rem" />
+						<m:Label text="Visualizar apenas erros" />
+						<m:CheckBox
+							select="onFilterStatus"
+							selected="{Config>/errorOnly}" />
+					</f:content>
+				</f:SimpleForm>
+			</m:HBox>
+		</headerContent>
+		<sections>
+			<ObjectPageSection
+				titleUppercase="false"
+				title="Visão Geral">
+				<subSections>
+					<ObjectPageSubSection
+						title="Visão Geral"
+						titleUppercase="false">
+						<blocks>
+							<core:Fragment
+								fragmentName="zbsp_ariba_ptrk.view.general"
+								type="XML" />
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+			<ObjectPageSection
+				titleUppercase="false"
+				title="Sourcing">
+				<subSections>
+					<ObjectPageSubSection
+						title="Quote Request ({Main>/zclAribaQuoteRequestCount})"
+						titleUppercase="false">
+						<blocks>
+							<core:Fragment
+								fragmentName="zbsp_ariba_ptrk.view.quoterequest"
+								type="XML" />
+						</blocks>
+					</ObjectPageSubSection>
+					<ObjectPageSubSection
+						title="Quote Message ({Main>/zclAribaQuoteMessageCount})"
+						titleUppercase="false">
+						<blocks>
+							<core:Fragment
+								fragmentName="zbsp_ariba_ptrk.view.quotemessage"
+								type="XML" />
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+			<ObjectPageSection
+				titleUppercase="false"
+				title="SLP">
+				<subSections>
+					<ObjectPageSubSection
+						title="Vendor Replicate"
+						titleUppercase="false">
+						<blocks>
+							<core:Fragment
+								fragmentName="zbsp_ariba_ptrk.view.details"
+								type="XML" />
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+			<ObjectPageSection
+				titleUppercase="false"
+				title="Commerce Automation">
+				<subSections>
+					<ObjectPageSubSection
+						title="Purchase Order"
+						titleUppercase="false">
+						<blocks>
+							<core:Fragment
+								fragmentName="zbsp_ariba_ptrk.view.orderrequest"
+								type="XML" />
+						</blocks>
+					</ObjectPageSubSection>
+					<ObjectPageSubSection
+						title="Order Confirmation"
+						titleUppercase="false">
+						<blocks>
+							<core:Fragment
+								fragmentName="zbsp_ariba_ptrk.view.orderconfirmation"
+								type="XML" />
+						</blocks>
+					</ObjectPageSubSection>
+					<ObjectPageSubSection
+						title="Supplier Service Entry Sheet"
+						titleUppercase="false">
+						<blocks>
+							<core:Fragment
+								fragmentName="zbsp_ariba_ptrk.view.servicesheet"
+								type="XML" />
+						</blocks>
+					</ObjectPageSubSection>
+					<ObjectPageSubSection
+						title="Supplier Service Entry Sheet response"
+						titleUppercase="false">
+						<blocks>
+							<core:Fragment
+								fragmentName="zbsp_ariba_ptrk.view.servicesheetresponse"
+								type="XML" />
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+			<ObjectPageSection
+				titleUppercase="false"
+				title="Buying">
+				<subSections>
+					<ObjectPageSubSection
+						title="Import Requisition"
+						titleUppercase="false">
+						<blocks>
+							<core:Fragment
+								fragmentName="zbsp_ariba_ptrk.view.details"
+								type="XML" />
+						</blocks>
+					</ObjectPageSubSection>
+					<ObjectPageSubSection
+						title="Purchase Order ({Main>/zclAribaPurchaseOrderCount})"
+						titleUppercase="false">
+						<blocks>
+							<core:Fragment
+								fragmentName="zbsp_ariba_ptrk.view.purchaseorder"
+								type="XML" />
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+		</sections>
+	</ObjectPageLayout>
+</core:View>
