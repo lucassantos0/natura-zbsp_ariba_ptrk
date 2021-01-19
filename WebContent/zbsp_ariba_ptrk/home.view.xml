@@ -102,7 +102,7 @@
 				title="Commerce Automation">
 				<subSections>
 					<ObjectPageSubSection
-						title="Purchase Order"
+						title="Purchase Order ({Main>/zclAribaOrderRequestCount})"
 						titleUppercase="false">
 						<blocks>
 							<core:Fragment
@@ -111,7 +111,7 @@
 						</blocks>
 					</ObjectPageSubSection>
 					<ObjectPageSubSection
-						title="Order Confirmation"
+						title="Order Confirmation ({Main>/zclAribaOrderConfCount})"
 						titleUppercase="false">
 						<blocks>
 							<core:Fragment
@@ -120,7 +120,7 @@
 						</blocks>
 					</ObjectPageSubSection>
 					<ObjectPageSubSection
-						title="Supplier Service Entry Sheet"
+						title="Supplier Service Entry Sheet ({Main>/zclAribaServentrysheetCount})"
 						titleUppercase="false">
 						<blocks>
 							<core:Fragment
@@ -129,7 +129,7 @@
 						</blocks>
 					</ObjectPageSubSection>
 					<ObjectPageSubSection
-						title="Supplier Service Entry Sheet response"
+						title="Supplier Service Entry Sheet response ({Main>/zclAribaServicesheetRCount})"
 						titleUppercase="false">
 						<blocks>
 							<core:Fragment
