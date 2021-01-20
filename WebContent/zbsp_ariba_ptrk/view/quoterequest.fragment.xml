@@ -20,7 +20,7 @@
 						target="_blank" />
 				</template>
 			</Column>
-			<Column width="10rem" sortProperty="entryDate">
+			<Column width="10rem" sortProperty="line/entryDate">
 				<m:Label text="Data processamento" />
 				<template>
 					<m:Text

@@ -42,9 +42,11 @@
 						<m:HBox>
 							<m:DatePicker
 								change="onDateFromChange"
+								displayFormat="short"
 								class="sapUiSmallMarginBottom" />
 							<m:DatePicker
 								change="onDateFromChange"
+								displayFormat="short"
 								class="sapUiSmallMarginBottom" />
 						</m:HBox>
 					</f:content>
