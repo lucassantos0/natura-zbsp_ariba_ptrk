@@ -8,6 +8,7 @@ sap.ui.controller("zbsp_ariba_ptrk.home", {
 
   _oConfig : {
     "mainUrl" : "https://aslx62br.natura.com.br:4300/sap/bc/zariba/main/?sap-client=210&sap-user=GBLANCO&sap-password=Padawan2021",
+    "statsUrl" : "https://aslx148br.natura.com.br:4300/sap/bc/zariba/stats?sap-client=210&sap-user=DMIRODRIG&sap-password=Ariba@202012",
     "mainCalculatedUrl" : "",
     "filter" : "",
     "errorOnly" : true,
@@ -18,15 +19,17 @@ sap.ui.controller("zbsp_ariba_ptrk.home", {
   _oSupplierDashboardConfig: {
     "url" : "https://aslx62br.natura.com.br:4300/sap/bc/zariba/suppliers_dash?sap-client=210&sap-user=GBLANCO&sap-password=Padawan2021"
   },
-
+  
   onInit: function() {
     this._oQuoteRequestModel = new sap.ui.model.json.JSONModel();
     this._oQuoteRequestModel.attachRequestCompleted(this.onQuoteRequestCompleted.bind(this));
     this._oConfigModel = new sap.ui.model.json.JSONModel(this._oConfig);
     this._oSupplierDashboardModel = new sap.ui.model.json.JSONModel();
+    this._oStatsModel = new sap.ui.model.json.JSONModel();
     this.getView().setModel(this._oQuoteRequestModel, "Main");
     this.getView().setModel(this._oConfigModel, "Config");
     this.getView().setModel(this._oSupplierDashboardModel, "Supplier");
+    this.getView().setModel(this._oStatsModel, "Stats");
     this._fUpdateModel();
   },
 
@@ -85,5 +88,6 @@ sap.ui.controller("zbsp_ariba_ptrk.home", {
     this._oQuoteRequestModel.loadData(this._oConfig.mainCalculatedUrl);
     this._oConfigModel.updateBindings();
     this._oSupplierDashboardModel.loadData(this._oSupplierDashboardConfig.url);
+    this._oStatsModel.loadData(this._oConfig.statsUrl);
   }
 });

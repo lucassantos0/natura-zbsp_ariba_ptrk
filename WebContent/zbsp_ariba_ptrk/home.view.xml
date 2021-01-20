@@ -53,6 +53,17 @@
 						</m:HBox>
 					</f:content>
 				</f:SimpleForm>
+				<m:List items="{Stats>/}">
+					<m:items>
+						<m:StandardListItem
+							title="{Stats>clsname}"
+							info="{
+								path: 'Stats>lastruntime',
+								type: 'sap.ui.model.type.DateTime',
+								formatOptions: {source: {pattern: 'yyyyMMddHHmmss'}, style: 'short'}
+							 }" />
+					</m:items>
+				</m:List>
 			</m:HBox>
 		</headerContent>
 		<sections>
