@@ -27,7 +27,7 @@
 						text="{
 								path: 'Main>line/entryDate',
 								type: 'sap.ui.model.type.Date',
-								formatOptions: {source: {pattern: 'yyyyMMddHHmmss'}, style: 'long'}
+								formatOptions: {source: {pattern: 'yyyyMMddHHmmss'}, style: 'short'}
 							}" 		
 						wrapping="false" />
 				</template>
