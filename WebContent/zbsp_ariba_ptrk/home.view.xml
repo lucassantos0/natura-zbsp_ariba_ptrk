@@ -29,11 +29,6 @@
 						<m:Text
 							text="{Config>/mainCalculatedUrl}"
 							wrapping="true" />
-						<m:Label text="Filtro" />
-						<m:SearchField
-							value="{Config>/filter}"
-							search="onSearchString"
-							width="18rem" />
 						<m:Label text="Visualizar apenas erros" />
 						<m:CheckBox
 							select="onFilterStatus"
@@ -41,18 +36,21 @@
 						<m:Label text="Data seleção" />
 						<m:HBox>
 							<m:DatePicker
-								change="onDateChange"
 								displayFormat="short"
 								value="{Main>/dateFrom}"
-								valueFormat="yyyyMMddHHmmss"
+								valueFormat="yyyyMMdd"
 								class="sapUiSmallMarginBottom" />
 							<m:DatePicker
-								change="onDateChange"
 								displayFormat="short"
 								value="{Main>/dateTo}"
-								valueFormat="yyyyMMddHHmmss"
+								valueFormat="yyyyMMdd"
 								class="sapUiSmallMarginBottom" />
 						</m:HBox>
+						<m:Label text="Filtro" />
+						<m:SearchField
+							value="{Config>/filter}"
+							search="onSearchString"
+							width="18rem" />
 					</f:content>
 				</f:SimpleForm>
 			</m:HBox>
