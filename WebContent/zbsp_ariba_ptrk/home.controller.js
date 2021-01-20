@@ -8,7 +8,7 @@ sap.ui.controller("zbsp_ariba_ptrk.home", {
 
   _oConfig : {
     "mainUrl" : "https://aslx62br.natura.com.br:4300/sap/bc/zariba/main/?sap-client=210&sap-user=GBLANCO&sap-password=Padawan2021",
-    "statsUrl" : "https://aslx148br.natura.com.br:4300/sap/bc/zariba/stats?sap-client=210&sap-user=DMIRODRIG&sap-password=Ariba@202012",
+    "statsUrl" : "https://aslx62br.natura.com.br:4300/sap/bc/zariba/stats?sap-client=210&sap-user=GBLANCO&sap-password=Padawan2021",
     "mainCalculatedUrl" : "",
     "filter" : "",
     "errorOnly" : true,
