@@ -21,6 +21,7 @@ sap.ui.controller("zbsp_ariba_ptrk.home", {
 
   onInit: function() {
     this._oQuoteRequestModel = new sap.ui.model.json.JSONModel();
+    this._oQuoteRequestModel.requestCompleted(this.onQuoteRequestLoaded().this);
     this._oConfigModel = new sap.ui.model.json.JSONModel(this._oConfig);
     this._oSupplierDashboardModel = new sap.ui.model.json.JSONModel();
     this.getView().setModel(this._oQuoteRequestModel, "Main");
@@ -54,6 +55,10 @@ sap.ui.controller("zbsp_ariba_ptrk.home", {
 //  onExit: function() {
 //
 //  }
+
+  onQuoteRequestLoaded : function(oEvent){
+  	alert(oEvent.getParameters("success"));
+  },
 
   onSearchString : function(oControlEvent){
     this._fUpdateModel();
