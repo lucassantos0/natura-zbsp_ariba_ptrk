@@ -43,13 +43,13 @@
 							<m:DatePicker
 								change="onDateChange"
 								displayFormat="short"
-								value="{Config>/dateFrom}"
+								value="{Main>/dateFrom}"
 								valueFormat="yyyyMMddHHmmss"
 								class="sapUiSmallMarginBottom" />
 							<m:DatePicker
 								change="onDateChange"
 								displayFormat="short"
-								value="{Config>/dateTo}"
+								value="{Main>/dateTo}"
 								valueFormat="yyyyMMddHHmmss"
 								class="sapUiSmallMarginBottom" />
 						</m:HBox>

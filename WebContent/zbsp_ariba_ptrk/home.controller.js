@@ -71,8 +71,8 @@ sap.ui.controller("zbsp_ariba_ptrk.home", {
     this._oConfig.mainCalculatedUrl = this._oConfig.mainUrl 
     	+ "&filter=" + this._oConfig.filter 
     	+ "&errorOnly=" + ( this._oConfig.errorOnly ? "true" : "false" )
-    	+ "&dateFrom=" + this._oConfig.dateFrom
-    	+ "&dateTo=" + this._oConfig.dateTo;
+    	+ "&dateFrom=" + this._oQuoteRequestModel.dateFrom
+    	+ "&dateTo=" + this._oQuoteRequestModel.dateTo;
     this._oQuoteRequestModel.loadData(this._oConfig.mainCalculatedUrl);
     this._oConfigModel.updateBindings();
     this._oSupplierDashboardModel.loadData(this._oSupplierDashboardConfig.url);
