@@ -38,15 +38,19 @@
 						<m:CheckBox
 							select="onFilterStatus"
 							selected="{Config>/errorOnly}" />
-						<m:Label text="Seleção" />
+						<m:Label text="Data seleção" />
 						<m:HBox>
 							<m:DatePicker
 								change="onDateFromChange"
 								displayFormat="short"
+								value="{Config>/dateFrom}"
+								valueFormat="yyyyMMddHHmmss"
 								class="sapUiSmallMarginBottom" />
 							<m:DatePicker
 								change="onDateFromChange"
 								displayFormat="short"
+								value="{Config>/dateTo}"
+								valueFormat="yyyyMMddHHmmss"
 								class="sapUiSmallMarginBottom" />
 						</m:HBox>
 					</f:content>
