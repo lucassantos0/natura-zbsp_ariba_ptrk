@@ -63,6 +63,10 @@ sap.ui.controller("zbsp_ariba_ptrk.home", {
     this._fUpdateModel();
   },
 
+  onDateChange : function(oControlEvent){
+  	this._fUpdateModel();
+  },
+
   _fUpdateModel : function() {
     this._oConfig.mainCalculatedUrl = this._oConfig.mainUrl 
     	+ "&filter=" + this._oConfig.filter 

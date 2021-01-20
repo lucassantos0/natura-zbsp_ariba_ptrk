@@ -41,13 +41,13 @@
 						<m:Label text="Data seleção" />
 						<m:HBox>
 							<m:DatePicker
-								change="onDateFromChange"
+								change="onDateChange"
 								displayFormat="short"
 								value="{Config>/dateFrom}"
 								valueFormat="yyyyMMddHHmmss"
 								class="sapUiSmallMarginBottom" />
 							<m:DatePicker
-								change="onDateFromChange"
+								change="onDateChange"
 								displayFormat="short"
 								value="{Config>/dateTo}"
 								valueFormat="yyyyMMddHHmmss"
