@@ -36,14 +36,22 @@
 						<m:Label text="Data seleção" />
 						<m:HBox>
 							<m:DatePicker
-								displayFormat="short"
-								value="{Main>/dateFrom}"
-								valueFormat="yyyyMMdd"
+								displayFormat="short"								
+								value="{
+									path: 'Main>/dateFrom',
+									type: 'sap.ui.model.type.Date',
+									formatOptions: {source: {pattern: 'yyyyMMddHHmmss'}, style: 'short'}
+								}"		
+								valueFormat="yyyyMMddHHmmss"
 								class="sapUiSmallMarginBottom" />
 							<m:DatePicker
 								displayFormat="short"
-								value="{Main>/dateTo}"
-								valueFormat="yyyyMMdd"
+								value="{
+									path: 'Main>/dateTo',
+									type: 'sap.ui.model.type.Date',
+									formatOptions: {source: {pattern: 'yyyyMMddHHmmss'}, style: 'short'}
+								}"								
+								valueFormat="yyyyMMddHHmmss"
 								class="sapUiSmallMarginBottom" />
 						</m:HBox>
 						<m:Label text="Filtro" />
