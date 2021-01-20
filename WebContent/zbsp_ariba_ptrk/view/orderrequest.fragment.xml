@@ -71,6 +71,14 @@
 						wrapping="false" />
 				</template>
 			</Column>
+			<Column width="7rem" sortProperty="entryDate">
+				<m:Label text="Data processamento" />
+				<template>
+					<m:Text
+						text="{Main>line/entryDate}"
+						wrapping="false" />
+				</template>
+			</Column>
 		</columns>
 		<footer>
 			<m:OverflowToolbar></m:OverflowToolbar>
