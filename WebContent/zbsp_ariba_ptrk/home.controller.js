@@ -57,7 +57,11 @@ sap.ui.controller("zbsp_ariba_ptrk.home", {
 //  }
 
   onQuoteRequestCompleted : function(oEvent){
-  	alert(oEvent.getParameters("success"));
+  	if(oEvent.getParameter("success")){ 
+  		this.getView().getModel("Config").setProperty("/dateFrom", this.getView().getModel("Main").getProperty("/dateFrom")); 
+  		this.getView().getModel("Config").setProperty("/dateTo", this.getView().getModel("Main").getProperty("/dateTo")); 
+  	}
+  	//TODO handle errors
   },
 
   onSearchString : function(oControlEvent){
