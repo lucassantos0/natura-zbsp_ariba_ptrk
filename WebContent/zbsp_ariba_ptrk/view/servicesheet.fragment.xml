@@ -20,6 +20,14 @@
 						target="_blank" />
 				</template>
 			</Column>
+			<Column width="10rem" sortProperty="entryDate">
+				<m:Label text="Data processamento" />
+				<template>
+					<m:Text
+						text="{Main>line/entryDate}"
+						wrapping="false" />
+				</template>
+			</Column>
 			<Column width="28rem">
 				<m:Label text="PI" />
 				<template>
@@ -52,14 +60,6 @@
 				<template>
 					<m:Text
 						text="{Main>line/targetStatus}"
-						wrapping="false" />
-				</template>
-			</Column>
-			<Column width="7rem" sortProperty="entryDate">
-				<m:Label text="Data processamento" />
-				<template>
-					<m:Text
-						text="{Main>line/entryDate}"
 						wrapping="false" />
 				</template>
 			</Column>
