@@ -17,7 +17,7 @@ sap.ui.controller("zbsp_ariba_ptrk.home", {
   },
 
   _oSupplierDashboardConfig: {
-    "url" : "https://aslx62br.natura.com.br:4300/sap/bc/zariba/suppliers_dash?sap-client=210&sap-user=GBLANCO&sap-password=Padawan2021"
+    "url" : "https://aslx148br.natura.com.br:4300/sap/bc/zariba/suppliers_dash?sap-client=210&sap-user=DMIRODRIG&sap-password=Ariba@202012"
   },
   
   onInit: function() {
