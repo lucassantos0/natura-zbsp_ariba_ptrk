@@ -7,8 +7,8 @@ sap.ui.controller("zbsp_ariba_ptrk.home", {
 */
 
   _oConfig : {
-    "mainUrl" : "https://aslx148br.natura.com.br:4300/sap/bc/zariba/main/?sap-client=210&sap-user=DMIRODRIG&sap-password=Ariba@202012",
-    "statsUrl" : "https://aslx148br.natura.com.br:4300/sap/bc/zariba/stats?sap-client=210&sap-user=DMIRODRIG&sap-password=Ariba@202012",
+    "mainUrl" : "/sap/bc/zariba/main/?sap-client=210",
+    "statsUrl" : "/sap/bc/zariba/stats?sap-client=210",
     "mainCalculatedUrl" : "",
     "filter" : "",
     "errorOnly" : true,
@@ -17,7 +17,7 @@ sap.ui.controller("zbsp_ariba_ptrk.home", {
   },
 
   _oSupplierDashboardConfig: {
-    "url" : "https://aslx148br.natura.com.br:4300/sap/bc/zariba/suppliers_dash?sap-client=210&sap-user=DMIRODRIG&sap-password=Ariba@202012"
+    "url" : "/sap/bc/zariba/suppliers_dash?sap-client=210"
   },
   
   onInit: function() {
