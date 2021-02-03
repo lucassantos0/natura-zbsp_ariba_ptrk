@@ -168,6 +168,15 @@
 				title="Buying">
 				<subSections>
 					<ObjectPageSubSection
+						title="Buying PRs"
+						titleUppercase="false">
+						<blocks>
+							<core:Fragment
+								fragmentName="zbsp_ariba_ptrk.view.buyingpr"
+								type="XML" />
+						</blocks>
+					</ObjectPageSubSection>
+					<ObjectPageSubSection
 						title="Import Requisition"
 						titleUppercase="false">
 						<blocks>
