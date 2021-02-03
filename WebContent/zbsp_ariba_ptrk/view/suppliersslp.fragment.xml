@@ -46,7 +46,7 @@
 				</template>
 			</Column>
 			<Column
-				width="8rem"
+				width="10rem"
 				filterProperty="qualificationStatus"
 				sortProperty="qualificationStatus">
 				<m:Label text="Qualificação" />
@@ -55,7 +55,7 @@
 				</template>
 			</Column>
 			<Column
-				width="8rem"
+				width="10rem"
 				filterProperty="registrationStatus"
 				sortProperty="registrationStatus">
 				<m:Label text="Registro" />
