@@ -35,21 +35,23 @@
 						wrapping="false" />
 				</template>
 			</Column>
-			<Column width="8rem">
-				<m:Label
-					text="Status"
-					filterProperty="status"
-					sortProperty="status" />
+			<Column
+				width="12rem"
+				filterProperty="status"
+				sortProperty="status">
+				<m:Label text="Status" />
 				<template>
-					<m:Text text="{BuyingPr>status}" /></template>
+					<m:Text text="{BuyingPr>status}" />
+				</template>
 			</Column>
 			<Column
-				width="8rem"
+				width="12rem"
 				filterProperty="sourcingStatusString"
 				sortProperty="sourcingStatusString">
 				<m:Label text="Sourcing Status" />
 				<template>
-					<m:Text text="{BuyingPr>sourcingStatusString}" /></template>
+					<m:Text text="{BuyingPr>sourcingStatusString}" />
+				</template>
 			</Column>
 			<Column
 				width="9rem"
@@ -57,7 +59,8 @@
 				sortProperty="originatingSystem">
 				<m:Label text="Sistema Origem" />
 				<template>
-					<m:Text text="{BuyingPr>originatingSystem}" /></template>
+					<m:Text text="{BuyingPr>originatingSystem}" />
+				</template>
 			</Column>
 			<Column
 				width="6rem"
@@ -65,7 +68,8 @@
 				sortProperty="erpRequisition">
 				<m:Label text="ERP Req." />
 				<template>
-					<m:Text text="{BuyingPr>erpRequisition}" /></template>
+					<m:Text text="{BuyingPr>erpRequisition}" />
+				</template>
 			</Column>
 		</columns>
 		<footer>
