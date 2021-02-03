@@ -37,7 +37,7 @@
 				</template>
 			</Column>
 			<Column
-				width="16rem"
+				width="26rem"
 				filterProperty="name"
 				sortProperty="name">
 				<m:Label text="Nome" />
