@@ -1,6 +1,6 @@
 <core:FragmentDefinition
 	xmlns:core="sap.ui.core"
-	xmlns="sap.ui.table" 
+	xmlns="sap.ui.table"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:u="sap.ui.unified"
 	xmlns:m="sap.m"
@@ -11,7 +11,8 @@
 		<columns>
 			<Column
 				width="9rem"
-				filterProperty="Name">
+				filterProperty="buyingRequisition"
+				sortProperty="buyingRequisition">
 				<m:Label text="Requisição Ariba" />
 				<template>
 					<m:Link
@@ -20,7 +21,9 @@
 						target="_blank" />
 				</template>
 			</Column>
-			<Column width="6rem" sortProperty="timeUpdated">
+			<Column
+				width="6rem"
+				sortProperty="timeUpdated">
 				<m:Label text="Data" />
 				<template>
 					<m:Text
@@ -28,37 +31,41 @@
 								path: 'BuyingPr>timeUpdated',
 								type: 'sap.ui.model.type.Date',
 								formatOptions: {source: {pattern: 'yyyyMMddHHmmss'}, style: 'short'}
-							}" 		
+							}"
 						wrapping="false" />
 				</template>
 			</Column>
 			<Column width="8rem">
-				<m:Label text="Status" />
+				<m:Label
+					text="Status"
+					filterProperty="status"
+					sortProperty="status" />
 				<template>
-					<m:Text
-						text="{BuyingPr>status}" />
-				</template>
+					<m:Text text="{BuyingPr>status}" /></template>
 			</Column>
-			<Column width="8rem">
+			<Column
+				width="8rem"
+				filterProperty="sourcingStatusString"
+				sortProperty="sourcingStatusString">
 				<m:Label text="Sourcing Status" />
 				<template>
-					<m:Text
-						text="{BuyingPr>sourcingStatusString}" />
-				</template>
+					<m:Text text="{BuyingPr>sourcingStatusString}" /></template>
 			</Column>
-			<Column width="9rem">
+			<Column
+				width="9rem"
+				filterProperty="originatingSystem"
+				sortProperty="originatingSystem">
 				<m:Label text="Sistema Origem" />
 				<template>
-					<m:Text
-						text="{BuyingPr>originatingSystem}" />
-				</template>
+					<m:Text text="{BuyingPr>originatingSystem}" /></template>
 			</Column>
-			<Column width="6rem">
+			<Column
+				width="6rem"
+				filterProperty="erpRequisition"
+				sortProperty="erpRequisition">
 				<m:Label text="ERP Req." />
 				<template>
-					<m:Text
-						text="{BuyingPr>erpRequisition}" />
-				</template>
+					<m:Text text="{BuyingPr>erpRequisition}" /></template>
 			</Column>
 		</columns>
 		<footer>
