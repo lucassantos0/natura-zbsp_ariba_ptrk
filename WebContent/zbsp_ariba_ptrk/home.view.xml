@@ -111,11 +111,11 @@
 				title="SLP">
 				<subSections>
 					<ObjectPageSubSection
-						title="Vendor Replicate"
+						title="SLP"
 						titleUppercase="false">
 						<blocks>
 							<core:Fragment
-								fragmentName="zbsp_ariba_ptrk.view.details"
+								fragmentName="zbsp_ariba_ptrk.view.suppliersslp"
 								type="XML" />
 						</blocks>
 					</ObjectPageSubSection>
