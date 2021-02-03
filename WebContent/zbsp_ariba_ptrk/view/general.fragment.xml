@@ -102,7 +102,12 @@
 				vizProperties="{
 	                title: {
 	                  text: 'Registro'
-	                }
+	                },
+		                plotArea : {
+		               	 	dataLabel: {
+		               	 		visible: true
+		               	 	}
+		                }
 	              }">
 				<viz:dataset>
 					<viz.data:FlattenedDataset
@@ -139,6 +144,11 @@
 				vizProperties="{
 		                title: {
 		                  text: 'Qualificação'
+		                },
+		                plotArea : {
+		               	 	dataLabel: {
+		               	 		visible: true
+		               	 	}
 		                }
 		              }">
 				<viz:dataset>
@@ -174,10 +184,15 @@
 				width="16rem"
 				vizType='column'
 				vizProperties="{
-                title: {
-                  text: 'Integração'
-                }
-              }">
+	                title: {
+		                  text: 'Integração'
+		                },
+		                plotArea : {
+		               	 	dataLabel: {
+		               	 		visible: true
+		               	 	}
+		                }
+             	 	}">
 				<viz:dataset>
 					<viz.data:FlattenedDataset
 						data="{Supplier>/integration}"
