@@ -29,14 +29,14 @@
 						<m:Text
 							text="{Config>/mainCalculatedUrl}"
 							wrapping="true" />
-						<m:Label text="Filtro" />
-						<m:Input
-							value="{Config>/filter}"
-							width="18rem" />
 						<m:Label text="Visualizar apenas erros" />
 						<m:CheckBox
 							select="onFilterStatus"
 							selected="{Config>/errorOnly}" />
+						<m:Label text="Filtro" />
+						<m:Input
+							value="{Config>/filter}"
+							width="18rem" />
 						<m:Label text="Data seleção" />
 						<m:HBox>
 							<m:DatePicker
