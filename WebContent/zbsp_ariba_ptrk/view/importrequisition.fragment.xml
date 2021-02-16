@@ -45,7 +45,7 @@
 				</template>
 			</Column>
 			<Column
-				width="26rem"
+				width="36rem"
 				filterProperty="msg"
 				sortProperty="msg">
 				<m:Label text="Mensagem" />
