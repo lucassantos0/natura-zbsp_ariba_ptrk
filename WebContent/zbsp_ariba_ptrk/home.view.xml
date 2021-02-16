@@ -30,9 +30,8 @@
 							text="{Config>/mainCalculatedUrl}"
 							wrapping="true" />
 						<m:Label text="Filtro" />
-						<m:SearchField
+						<m:Input
 							value="{Config>/filter}"
-							search="onSearchString"
 							width="18rem" />
 						<m:Label text="Visualizar apenas erros" />
 						<m:CheckBox
@@ -50,6 +49,10 @@
 								value="{Config>/dateTo}"
 								valueFormat="yyyyMMddHHmmss"
 								class="sapUiSmallMarginBottom" />
+							<m:Button
+								type="Default"
+								text="Aplicar"
+								press="onSearchString" />
 						</m:HBox>
 					</f:content>
 				</f:SimpleForm>
