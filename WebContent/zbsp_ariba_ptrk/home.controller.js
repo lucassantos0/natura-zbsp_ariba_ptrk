@@ -11,7 +11,7 @@ sap.ui.controller("zbsp_ariba_ptrk.home", {
     "mainCalculatedUrl" : "",
     "statsUrl" : "https://aslx148br.natura.com.br:4300/sap/bc/zariba/stats?sap-client=210&sap-user=DMIRODRIG&sap-password=Ariba@202012",
     "buyingPrUrl" : "https://aslx148br.natura.com.br:4300/sap/bc/zariba/buyingpr?sap-client=210&sap-user=DMIRODRIG&sap-password=Ariba@202012",
-    "buyingCalculatedUrl":"",
+    "buyingPrCalculatedUrl":"",
     "filter" : "",
     "errorOnly" : true,
     "dateFrom": "",
@@ -93,12 +93,12 @@ sap.ui.controller("zbsp_ariba_ptrk.home", {
     this._oConfigModel.updateBindings();
     this._oSupplierDashboardModel.loadData(this._oSupplierDashboardConfig.url);
     this._oStatsModel.loadData(this._oConfig.statsUrl);
-    this._oConfig.buyingCalculatedUrl = this._oConfig.buyingUrl 
+    this._oConfig.buyingPrCalculatedUrl = this._oConfig.buyingPrUrl 
     	+ "&filter=" + this._oConfig.filter 
     	+ "&errorOnly=" + ( this._oConfig.errorOnly ? "true" : "false" )
     	+ ( !isNaN(this._oConfig.dateFrom) ? "&dateFrom=" + this._oConfig.dateFrom : "" )
     	+ ( !isNaN(this._oConfig.dateTo) ? "&dateTo=" + this._oConfig.dateTo : "" )
     
-    this._oBuyingPrModel.loadData(this._oConfig.buyingCalculatedUrl);
+    this._oBuyingPrModel.loadData(this._oConfig.buyingPrCalculatedUrl);
   }
 });
