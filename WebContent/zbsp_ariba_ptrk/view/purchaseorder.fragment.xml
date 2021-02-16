@@ -45,7 +45,7 @@
 				<m:Label text="PI status" />
 				<template>
 					<m:Text
-						text="{Main>line/sourceStatus}"
+						text="{Main>line/sourceStatusText}"
 						wrapping="false" />
 				</template>
 			</Column>
@@ -62,7 +62,7 @@
 				<m:Label text="RFC status" />
 				<template>
 					<m:Text
-						text="{Main>line/middlewareStatus}"
+						text="{Main>line/middlewareStatusText}"
 						wrapping="false" />
 				</template>
 			</Column>

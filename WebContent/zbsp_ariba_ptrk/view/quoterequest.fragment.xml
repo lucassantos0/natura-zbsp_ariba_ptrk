@@ -45,7 +45,7 @@
 				<m:Label text="IDOC status" />
 				<template>
 					<m:Text
-						text="{Main>line/sourceStatus}"
+						text="{Main>line/sourceStatusText}"
 						wrapping="false" />
 				</template>
 			</Column>
@@ -62,7 +62,7 @@
 				<m:Label text="PI status" />
 				<template>
 					<m:Text
-						text="{Main>line/middlewareStatus}"
+						text="{Main>line/middlewareStatusText}"
 						wrapping="false" />
 				</template>
 			</Column>
@@ -79,7 +79,7 @@
 				<m:Label text="Ariba status" />
 				<template>
 					<m:Text
-						text="{Main>line/targetStatus}"
+						text="{Main>line/targetStatusText}"
 						wrapping="false" />
 				</template>
 			</Column>

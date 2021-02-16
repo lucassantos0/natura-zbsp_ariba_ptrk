@@ -37,6 +37,15 @@
 				</template>
 			</Column>
 			<Column
+				width="8rem"
+				filterProperty="anid"
+				sortProperty="anid">
+				<m:Label text="AN" />
+				<template>
+					<m:Text text="{Supplier>anid}" />
+				</template>
+			</Column>
+			<Column
 				width="26rem"
 				filterProperty="name"
 				sortProperty="name">
@@ -70,6 +79,15 @@
 				<m:Label text="Integração" />
 				<template>
 					<m:Text text="{Supplier>integrationStatus}" />
+				</template>
+			</Column>
+			<Column
+				width="24rem"
+				filterProperty="msg"
+				sortProperty="msg">
+				<m:Label text="Log" />
+				<template>
+					<m:Text text="{Supplier>msg}" />
 				</template>
 			</Column>
 		</columns>

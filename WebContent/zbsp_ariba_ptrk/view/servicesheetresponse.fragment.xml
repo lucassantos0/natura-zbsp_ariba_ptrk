@@ -46,7 +46,7 @@
 				<m:Label text="PI status" />
 				<template>
 					<m:Text
-						text="{Main>line/sourceStatus}"
+						text="{Main>line/sourceStatusText}"
 						wrapping="false" />
 				</template>
 			</Column>
@@ -63,7 +63,7 @@
 				<m:Label text="AN Status" />
 				<template>
 					<m:Text
-						text="{Main>line/targetStatus}"
+						text="{Main>line/targetStatusText}"
 						wrapping="false" />
 				</template>
 			</Column>
