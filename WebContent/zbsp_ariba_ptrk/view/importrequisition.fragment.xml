@@ -6,6 +6,7 @@
 	xmlns:m="sap.m"
 	xmlns:l="sap.ui.layout">
 	<Table
+		enableBusyIndicator="true"
 		rows="{BuyingPr>/erpRequisition}"
 		visibleRowCount="7">
 		<columns>
@@ -37,11 +38,11 @@
 			</Column>
 			<Column
 				width="12rem"
-				filterProperty="enviado"
-				sortProperty="enviado">
-				<m:Label text="enviado" />
+				filterProperty="isSuccessful"
+				sortProperty="isSuccessful">
+				<m:Label text="Enviado?" />
 				<template>
-					<m:Text text="{BuyingPr>enviado}" />
+					<m:CheckBox selected="{BuyingPr>isSuccessful}" />
 				</template>
 			</Column>
 			<Column

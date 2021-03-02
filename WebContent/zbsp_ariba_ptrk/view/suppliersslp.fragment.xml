@@ -6,6 +6,7 @@
 	xmlns:m="sap.m"
 	xmlns:l="sap.ui.layout">
 	<Table
+		enableBusyIndicator="true"
 		rows="{Supplier>/suppliers}"
 		visibleRowCount="7">
 		<columns>

@@ -6,6 +6,7 @@
 	xmlns:m="sap.m"
 	xmlns:l="sap.ui.layout">
 	<Table
+		enableBusyIndicator="true"
 		rows="{Main>/zclAribaOrderConf}"
 		visibleRowCount="7">
 		<columns>
