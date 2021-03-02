@@ -7,7 +7,7 @@ sap.ui.controller("zbsp_ariba_ptrk.home", {
 */
 
   _oConfig : {
-    "mainUrl" : "https://aslx62br.natura.com.br:4300/sap/bc/zariba/main/?sap-client=210&sap-user=GBLANCO&sap-password=Padawan2021",
+    "mainUrl" : "https://aslx62br.natura.com.br:4300/sap/bc/zariba/main/?sap-client=210&sap-user=GBLANCO&sap-password=Padawan2021", 
     "mainCalculatedUrl" : "",
     "statsUrl" : "https://aslx62br.natura.com.br:4300/sap/bc/zariba/stats?sap-client=210&sap-user=GBLANCO&sap-password=Padawan2021",
     "buyingPrUrl" : "https://aslx62br.natura.com.br:4300/sap/bc/zariba/buyingpr?sap-client=210&sap-user=GBLANCO&sap-password=Padawan2021",
