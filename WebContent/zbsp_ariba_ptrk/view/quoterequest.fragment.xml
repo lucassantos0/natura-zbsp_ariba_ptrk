@@ -11,6 +11,7 @@
 		showCloseButton="true"
 		class="sapUiMediumMarginBottom" />
 	<Table
+		alternateRowColors="true"
 		enableBusyIndicator="true"
 		rows="{Main>/zclAribaQuoteRequest}"
 		visibleRowCount="7">

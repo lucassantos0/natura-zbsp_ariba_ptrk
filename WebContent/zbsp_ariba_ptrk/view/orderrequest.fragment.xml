@@ -11,6 +11,7 @@
 		showCloseButton="true"
 		class="sapUiMediumMarginBottom" />
 	<Table
+		alternateRowColors="true"
 		rows="{Main>/zclAribaOrderRequest}"
 		visibleRowCount="7">
 		<columns>
