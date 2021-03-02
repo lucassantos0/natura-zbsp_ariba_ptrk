@@ -4,7 +4,12 @@
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:u="sap.ui.unified"
 	xmlns:m="sap.m"
-	xmlns:l="sap.ui.layout">
+	xmlns:l="sap.ui.layout">	
+	<m:MessageStrip
+		text="Criação de solicitações de Sourcing (ME41). Documentos enviados através do SAP PI para o Ariba Sourcing"
+		showIcon="true"
+		showCloseButton="true"
+		class="sapUiMediumMarginBottom" />
 	<Table
 		enableBusyIndicator="true"
 		rows="{Main>/zclAribaQuoteRequest}"

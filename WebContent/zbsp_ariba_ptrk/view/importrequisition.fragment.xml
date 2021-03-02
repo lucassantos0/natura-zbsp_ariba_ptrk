@@ -5,6 +5,11 @@
 	xmlns:u="sap.ui.unified"
 	xmlns:m="sap.m"
 	xmlns:l="sap.ui.layout">
+	<m:MessageStrip
+		text="Envio de requisições de compra (ME51N) do SAP ECC para o Ariba Buying. Documentos e histórico retornados da tabela ZMMT0004"
+		showIcon="true"
+		showCloseButton="true"
+		class="sapUiMediumMarginBottom" />
 	<Table
 		enableBusyIndicator="true"
 		rows="{BuyingPr>/erpRequisition}"
@@ -42,7 +47,7 @@
 				sortProperty="isSuccessful">
 				<m:Label text="Enviado?" />
 				<template>
-					<m:CheckBox selected="{BuyingPr>isSuccessful}" />
+					<m:Text text="{= ${BuyingPr>isSuccessful} == true ? 'Sim' : 'Não' }" />
 				</template>
 			</Column>
 			<Column

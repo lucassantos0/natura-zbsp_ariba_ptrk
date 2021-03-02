@@ -5,6 +5,11 @@
 	xmlns:u="sap.ui.unified"
 	xmlns:m="sap.m"
 	xmlns:l="sap.ui.layout">
+	<m:MessageStrip
+		text="Envio da resposta (aprovação ou rejeição) da folha de serviço (ML81N) para os fornecedores no Ariba Network através do SAP PI (CI9)"
+		showIcon="true"
+		showCloseButton="true"
+		class="sapUiMediumMarginBottom" />
 	<Table
 		enableBusyIndicator="true"
 		rows="{Main>/zclAribaServicesheetR}"

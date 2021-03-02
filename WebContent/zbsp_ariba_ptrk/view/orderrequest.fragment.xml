@@ -4,7 +4,12 @@
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:u="sap.ui.unified"
 	xmlns:m="sap.m"
-	xmlns:l="sap.ui.layout">
+	xmlns:l="sap.ui.layout">	
+	<m:MessageStrip
+		text="Envio de pedidos de compras (ME21N) para os fornecedores no Ariba Network através do SAP PI (CI9)"
+		showIcon="true"
+		showCloseButton="true"
+		class="sapUiMediumMarginBottom" />
 	<Table
 		rows="{Main>/zclAribaOrderRequest}"
 		visibleRowCount="7">
