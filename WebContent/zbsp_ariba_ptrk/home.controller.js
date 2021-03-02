@@ -7,10 +7,10 @@ sap.ui.controller("zbsp_ariba_ptrk.home", {
 */
 
   _oConfig : {
-    "mainUrl" : "https://aslx148br.natura.com.br:4300/sap/bc/zariba/main/?sap-client=210&sap-user=DMIRODRIG&sap-password=Ariba@202012",
+    "mainUrl" : "https://aslx62br.natura.com.br:4300/sap/bc/zariba/main/?sap-client=210&sap-user=GBLANCO&sap-password=Padawan2021",
     "mainCalculatedUrl" : "",
-    "statsUrl" : "https://aslx148br.natura.com.br:4300/sap/bc/zariba/stats?sap-client=210&sap-user=DMIRODRIG&sap-password=Ariba@202012",
-    "buyingPrUrl" : "https://aslx148br.natura.com.br:4300/sap/bc/zariba/buyingpr?sap-client=210&sap-user=DMIRODRIG&sap-password=Ariba@202012",
+    "statsUrl" : "https://aslx62br.natura.com.br:4300/sap/bc/zariba/stats?sap-client=210&sap-user=GBLANCO&sap-password=Padawan2021",
+    "buyingPrUrl" : "https://aslx62br.natura.com.br:4300/sap/bc/zariba/buyingpr?sap-client=210&sap-user=GBLANCO&sap-password=Padawan2021",
     "buyingPrCalculatedUrl":"",
     "filter" : "",
     "errorOnly" : true,
@@ -19,7 +19,7 @@ sap.ui.controller("zbsp_ariba_ptrk.home", {
   },
 
   _oSupplierDashboardConfig: {
-    "url" : "https://aslx148br.natura.com.br:4300/sap/bc/zariba/suppliers_dash?sap-client=210&sap-user=DMIRODRIG&sap-password=Ariba@202012"
+    "url" : "https://aslx62br.natura.com.br:4300/sap/bc/zariba/suppliers_dash?sap-client=210&sap-user=GBLANCO&sap-password=Padawan2021"
   },
   
   onInit: function() {
