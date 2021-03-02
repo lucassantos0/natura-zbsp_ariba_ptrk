@@ -31,7 +31,6 @@
 							wrapping="true" />
 						<m:Label text="Visualizar apenas erros" />
 						<m:CheckBox
-							select="onFilterStatus"
 							selected="{Config>/errorOnly}" />
 						<m:Label text="Filtro" />
 						<m:Input
