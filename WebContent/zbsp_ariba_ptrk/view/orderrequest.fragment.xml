@@ -75,23 +75,6 @@
 							wrapping="false" />
 					</template>
 				</Column>
-				<Column width="9rem">
-					<m:Label text="Ariba Network" />
-					<template>
-						<m:Link
-							text="{Main>line/targetId}"
-							href="{Main>line/targetUrl}"
-							target="_blank" />
-					</template>
-				</Column>
-				<Column width="7rem">
-					<m:Label text="AN status" />
-					<template>
-						<m:Text
-							text="{Main>line/targetStatus}"
-							wrapping="false" />
-					</template>
-				</Column>
 			</columns>
 		</Table>
 	</m:VBox>
