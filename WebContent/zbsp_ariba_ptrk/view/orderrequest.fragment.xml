@@ -71,7 +71,7 @@
 					<m:Label text="PI status" />
 					<template>
 						<m:Text
-							text="{Main>line/middlewareStatus}"
+							text="{Main>line/middlewareStatusText}"
 							wrapping="false" />
 					</template>
 				</Column>
