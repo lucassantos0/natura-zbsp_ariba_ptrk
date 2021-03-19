@@ -63,10 +63,8 @@
 				<Column width="12rem">
 					<m:Label text="AribaNetwork" />
 					<template>
-						<m:Link
-							text="{Main>line/targetId}"
-							href="{Main>line/targetUrl}"
-							target="_blank" />
+						<m:Text
+							text="{Main>line/targetId}" />
 					</template>
 				</Column>
 				<Column width="7rem">
