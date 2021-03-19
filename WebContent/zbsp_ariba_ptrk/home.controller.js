@@ -68,6 +68,7 @@ sap.ui.controller("zbsp_ariba_ptrk.home", {
   		this.getView().getModel("Config").setProperty("/dateFrom", this.getView().getModel("Main").getProperty("/dateFrom")); 
   		this.getView().getModel("Config").setProperty("/dateTo", this.getView().getModel("Main").getProperty("/dateTo")); 
   	}
+  	this.getView().byId("ObjectPageLayout").setBusy(false);
   	//TODO handle errors
   },
 
@@ -84,6 +85,7 @@ sap.ui.controller("zbsp_ariba_ptrk.home", {
   },
 
   _fUpdateModel : function() {
+  	this.getView().byId("ObjectPageLayout").setBusy(true);
     this._oConfig.mainCalculatedUrl = this._oConfig.mainUrl 
     	+ "&filter=" + this._oConfig.filter 
     	+ "&errorOnly=" + ( this._oConfig.errorOnly ? "true" : "false" )
