@@ -62,17 +62,15 @@
 				<Column width="9rem">
 					<m:Label text="RFC" />
 					<template>
-						<m:Link
-							text="{= ${Main>line/middlewareId}.substr(0,36) }"
-							href="#"
-							target="_blank" />
+						<m:Text
+							text="{Main>line/targetId}" />
 					</template>
 				</Column>
 				<Column width="7rem">
 					<m:Label text="RFC status" />
 					<template>
 						<m:Text
-							text="{Main>line/middlewareStatusText}"
+							text="{Main>line/targetStatusText}"
 							wrapping="false" />
 					</template>
 				</Column>
