@@ -23,7 +23,7 @@
 					sortProperty="id">
 					<m:Label text="SLP" />
 					<template>
-						<m:Link text="{Supplier>id}" />
+						<m:Text text="{Supplier>id}" />
 					</template>
 				</Column>
 				<Column
