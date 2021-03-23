@@ -19,7 +19,8 @@ sap.ui.controller("zbsp_ariba_ptrk.home", {
   },
 
   _oSupplierDashboardConfig: {
-    "url" : "https://aslx62br.natura.com.br:4300/sap/bc/zariba/suppliers_dash?sap-client=210&sap-user=GBLANCO&sap-password=Padawan032021!"
+    "url" : "https://aslx62br.natura.com.br:4300/sap/bc/zariba/suppliers_dash?sap-client=210&sap-user=GBLANCO&sap-password=Padawan032021!",
+    "calculatedUrl" : ""
   },
   
   onInit: function() {
@@ -93,7 +94,11 @@ sap.ui.controller("zbsp_ariba_ptrk.home", {
     	+ ( !isNaN(this._oConfig.dateTo) ? "&dateTo=" + this._oConfig.dateTo : "" )
     this._oQuoteRequestModel.loadData(this._oConfig.mainCalculatedUrl);
     this._oConfigModel.updateBindings();
-    this._oSupplierDashboardModel.loadData(this._oSupplierDashboardConfig.url);
+    
+    this._oSupplierDashboardConfig.calculatedUrl = this._oSupplierDashboardConfig.url
+    	+ "&errorOnly=" + ( this._oConfig.errorOnly ? "true" : "false" );
+    this._oSupplierDashboardModel.loadData(this._oSupplierDashboardConfig.calculatedUrl);
+        
     this._oStatsModel.loadData(this._oConfig.statsUrl);
     this._oConfig.buyingPrCalculatedUrl = this._oConfig.buyingPrUrl 
     	+ "&filter=" + this._oConfig.filter 
