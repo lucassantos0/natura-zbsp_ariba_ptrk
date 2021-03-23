@@ -22,10 +22,8 @@
 					filterProperty="Name">
 					<m:Label text="Ref Fornecedor" />
 					<template>
-						<m:Link
-							text="{Main>line/businessDocument}"
-							href="{Main>line/businessDocumentUrl}"
-							target="_blank" />
+						<m:Text
+							text="{Main>line/businessDocument}" />
 					</template>
 				</Column>
 				<Column
