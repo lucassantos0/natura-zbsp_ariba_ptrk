@@ -21,7 +21,7 @@
 					width="9rem"
 					filterProperty="banfn"
 					sortProperty="banfn">
-					<m:Label text="Requisição Ariba" />
+					<m:Label text="Requisição ECC" />
 					<template>
 						<m:Link
 							text="{BuyingPr>banfn}"
